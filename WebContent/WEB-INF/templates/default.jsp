@@ -8,6 +8,9 @@
 	<link href="${pageContext.request.contextPath}/resources/css/main.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="${pageContext.request.contextPath}/resources/scripts/jquery.js"></script>
 	
+	<tiles:insertAttribute name="includes"></tiles:insertAttribute>
+	
+	
 	<title><tiles:insertAttribute name="title"></tiles:insertAttribute></title>
 </head>
 <body>
