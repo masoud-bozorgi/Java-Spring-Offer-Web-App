@@ -11,6 +11,7 @@
 <c:url var="logoutUrl" value="/logout" />
 <sec:authorize access="isAuthenticated()">
 	<form action="${logoutUrl}" method="post">
-		<input type="submit" value="Log out" /> <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
+		<input type="submit" value="Log out" /> 
+		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 	</form>
 </sec:authorize>
